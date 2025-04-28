@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | News homepage</title>
+  
+</head>
+<body>
+ <section>
+  <div class="overlay"></div>
+   <nav>
+     <div class="container">
+       <div class="navbar">
+       <div class="logo">
+         <img src="./assets/images/logo.svg" alt="logo png">
+       </div>
+         <div>
+          <ul class="nav sidebar">
+            <li onclick= hideSidebar()><a href="#">
+              <div class="hambuger-close">
+                <img src="./assets/images/icon-menu-close.svg" alt="">
+              </div>
+            </a></li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+          </ul>
+           <ul class="nav justify-content-end desk">
+             <li class="nav-item">
+               <a class="nav-link hide active" aria-current="page" href="#">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link hide" href="#">New</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link hide" href="#">Popular</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link hide" href="#">Trending</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link hide" href="#">Categories</a>
+             </li>
+             <li onclick=showSidebar()>
+              <a href="#">
+                <div class="hambuger-open d-flex justify-content-end">
+                  <img src="./assets/images/icon-menu.svg" alt="">
+                </div>
+              </a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </nav>
+   <div class="container body">
+   <div class="row">
+     <div class="col-xs col-sm col-md-8">
+       <img src="./assets/images/image-web-3-desktop.jpg" alt="image web" class="desktop">
+       <img src="./assets/images/image-web-3-mobile.jpg" alt="image web" class="mobile">
+       <div class="row bright">
+         <div class="col-xs col-sm col-md">
+           <h1 class="inhead">The Bright Future of Web 3.0?</h1>
+         </div>
+         <div class="col-xs col-sm col-md write">
+           <p>
+             We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+             But is it really fulfilling its promise?
+           </p>
+   
+           <button class="btn">Read more</button>
+   
+         </div>
+       </div>
+     </div>
+     <div class="col-xs col-sm col-md-4 right-box">
+       <h1>New </h1>
+       <div class="line">
+         <h3>Hydrogen VS Electric Cars</h3>
+         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+       </div>
+       <hr>
+       <div class="line">
+         <h3>The Downsides of AI Artistry</h3>
+         <p>What are the possible adverse effects of on-demand AI image generation?</p>
+       </div>
+       <hr>
+       <div class="line">
+         <h3>Is VC Funding Drying Up?</h3>
+         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+       </div>
+     </div>
+   </div>
+   <div class="row pcsc">
+     <div class="col-xs col-sm col-md d-flex pc">
+       <div class="img"><img src="./assets/images/image-retro-pcs.jpg" alt=""></div>
+       <div class="pcs d-flex flex-column">
+         <h2>01</h2>
+         <h4>Reviving Retro PCs</h4>
+         <p>What happens when old PCs are given modern upgrades?</p>
+       </div>
+     </div>
+     <div class="col-xs col-sm col-md d-flex pc">
+       <div class="img"><img src="./assets/images/image-top-laptops.jpg" alt=""></div>
+       <div class="pcs d-flex flex-column">
+         <h2>02</h2>
+         <h4>Top 10 Laptops of 2022</h4>
+         <p>Our best picks for various needs and budgets.</p>
+       </div>
+     </div>
+     <div class="col-xs col-sm col-md d-flex pc">
+       <div class="img"><img src="./assets/images/image-gaming-growth.jpg" alt=""></div>
+       <div class="pcs d-flex flex-column">
+         <h2>03</h2>
+         <h4>The Growth of Gaming</h4>
+         <p>How the pandemic has sparked fresh opportunities.</p>
+       </div>
+     </div>
+   </div>
+   </div>
+ </section>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
